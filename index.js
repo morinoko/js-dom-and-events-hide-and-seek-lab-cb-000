@@ -21,6 +21,17 @@ function increaseRankBy(n) {
   // }
 }
 
-function deepestChild() {
+function findNestedDiv(div) {
+  if (div.querySelector("div").length > 0) {
+    let div = div.querySelector("div");
+    findNestedDiv(div);
+  } else {
+    return div;
+  }
+}
 
+function deepestChild() {
+  const nodeToSearch = document.getElementById('#grand-node');
+
+  return findNestedDiv(nodeToSearch);
 }
