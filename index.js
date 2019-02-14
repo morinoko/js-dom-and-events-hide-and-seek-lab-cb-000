@@ -21,8 +21,8 @@ function increaseRankBy(n) {
   // }
 }
 
-function findNestedDiv(div) {
-  if (div.querySelectorAll("div").length > 0) {
+function findNestedDiv(startDiv) {
+  if (startDiv.querySelectorAll("div").length > 0) {
     let div = div.querySelector("div");
     findNestedDiv(div);
   } else {
