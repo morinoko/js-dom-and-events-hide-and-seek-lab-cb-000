@@ -23,6 +23,7 @@ function increaseRankBy(n) {
 
 function findNestedDiv(startDiv) {
   if (startDiv.querySelectorAll("div").length > 0) {
+    console.log(startDiv);
     startDiv = startDiv.querySelector("div");
     findNestedDiv(startDiv);
   } else {
