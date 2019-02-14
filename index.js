@@ -21,16 +21,15 @@ function increaseRankBy(n) {
   // }
 }
 
-function findNestedDiv(startDiv) {
-  if (startDiv.querySelectorAll("div").length > 0) {
-    console.log(startDiv);
-    startDiv = startDiv.querySelector("div");
-    findNestedDiv(startDiv);
-  } else {
-    console.log(startDiv);
-    debugger;
-    return startDiv;
+function findNestedDiv(div) {
+  nextDiv = div.children[0];
+  
+  while (nextDiv) {
+    div = nextDiv;
+    nextDiv = div.children[0];
   }
+
+  return div;
 }
 
 function deepestChild() {
