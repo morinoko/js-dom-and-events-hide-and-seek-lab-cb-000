@@ -22,7 +22,7 @@ function increaseRankBy(n) {
 }
 
 function findNestedDiv(div) {
-  nextDiv = div.children[0];
+  let nextDiv = div.children[0];
 
   while (nextDiv) {
     div = nextDiv;
