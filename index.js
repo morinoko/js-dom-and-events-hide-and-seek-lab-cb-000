@@ -13,7 +13,7 @@ function increaseRankBy(n) {
     let itemNumber = parseInt(item.textContent);
     item.textContent = itemNumber + n;
   });
-  
+
   // Alternative
   // for (let i = 0; i < listItems.length; i++) {
   //   let itemNumber = parseInt(listItems[i].textContent);
