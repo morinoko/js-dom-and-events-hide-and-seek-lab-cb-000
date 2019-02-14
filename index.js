@@ -26,7 +26,7 @@ function findNestedDiv(startDiv) {
     let nextDiv = startDiv.querySelector("div");
     findNestedDiv(nextDiv);
   } else {
-    return div;
+    return startDiv;
   }
 }
 
