@@ -32,6 +32,6 @@ function findNestedDiv(startDiv) {
 
 function deepestChild() {
   const nodeToSearch = document.getElementById('grand-node');
-  
+
   return findNestedDiv(nodeToSearch);
 }
