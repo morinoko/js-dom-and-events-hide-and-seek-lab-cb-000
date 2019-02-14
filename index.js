@@ -28,6 +28,7 @@ function findNestedDiv(startDiv) {
     findNestedDiv(startDiv);
   } else {
     console.log(startDiv);
+    debugger;
     return startDiv;
   }
 }
