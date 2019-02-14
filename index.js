@@ -27,7 +27,6 @@ function findNestedDiv(div) {
   while (nextDiv) {
     div = nextDiv;
     nextDiv = div.children[0];
-    console.log(nextDiv);
   }
 
   return div;
